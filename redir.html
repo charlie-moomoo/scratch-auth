@@ -1,0 +1,10 @@
+<script>
+xhr.open('get','https://fluffyscratch.hampton.pw/auth/verify/v2/' + location.href.substr(13),true);
+xhr.send(null);
+xhr.onload = function(){
+};//onload 資料有回傳時(readyStatus:4)就可執行function
+var datastr = JSON.parse(xhr.responseText);
+var len = datastr.length;//定義長度,跑for迴圈
+var str= "";
+document.write(str)
+</script>
